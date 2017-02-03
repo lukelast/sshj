@@ -31,7 +31,7 @@ public class KeepAlive {
                 session.close();
             }
         } finally {
-            ssh.disconnect();
+            ssh.close();
         }
     }
 }
